@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>API Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <h1 class="h1 display-1 text-center mb-lg-5 mb-sm-2">
+        Api Mini Project </h1>
+    <form>
+
+        <select class="form-select form-select-lg form-select-sm" id="category-select">
+            <option value="all">All Categories</option>
+            <option value="electronics">Elec Items</option>
+            <option value="jewelery">Jewels Items</option>
+            <option value="men's clothing">Mens Cloth</option>
+            <option value="women's clothing">Womens Cloth</option>
+        </select>
+
+        <button class="btn btn-danger " onclick="fetchDataByCategories(event)">Search</button>
+
+    </form>
+    <div id="loader"></div>
+    <div class="container">
+
+        <div id="output" class="row">
+
+            <!-- Add more cards here -->
+        </div>
+    </div>
+</body>
+
+</html>
